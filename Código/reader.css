@@ -29,31 +29,6 @@ body {
     cursor: pointer;
 }
 
-.container {
-    display: flex;               
-    flex-direction: column;      
-    justify-content: center;     
-    align-items: center;        
-    height: calc(100vh - 60px); 
-    margin-top: 20px;          
-}
-
-.contentBox {
-    border: 20px solid transparent; 
-    border-radius: 5px;
-    height: 50px;
-    width: 170px;
-    background-color: #217178;
-    color: white;
-    display: flex;                
-    justify-content: center;      
-    align-items: center;          
-    text-align: center;
-    margin-bottom: 20px; 
-    margin-top: 30px;         
-}
-
-
 .contentOp {
     border: 20px solid transparent;
     border-radius: 5px;
@@ -76,17 +51,42 @@ body {
     justify-content: space-between;
 }
 
-.contentOp:hover{
-    cursor: pointer;
-}
-
 .iconII {
     margin-left: 10px; 
 }
 
-.conentOp a {
-    text-decoration: none;
-    color: inherit;
+.read {
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    width: 310px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 520px;
+    margin-top: 55px;
+}
+
+.read img {
+    height: 200px;  
+    width: 200px;
+    display: flex;
+    justify-content: center;   
+    margin-top: 45px;
+}
+
+.button {
+    border: 5px;
+    background-color: #217178;
+    color: white;
+    height: 36px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 150px;
 }
 
 .userContent {
@@ -128,4 +128,20 @@ input {
     /* z-index: 1000;  */
     width: 140px;
     box-shadow: #217178;
+}
+
+video {
+    width: 100%; 
+    max-width: 600px;
+    border: 1px solid #ccc;
+    background-color: white;
+    display: flex;
+    margin-left: 380px;
+}
+
+button {
+    background-color: #217178;
+    color: white;
+    display: flex;
+    margin: 100px 0px 0px 200px;
 }

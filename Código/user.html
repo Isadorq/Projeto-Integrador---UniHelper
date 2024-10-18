@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leia O QR Code</title>
+    <title>Cadastro novo usuário</title>
     <link rel="stylesheet" href="read.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -16,7 +16,7 @@
                     <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                 </a>
                 <div id="searchBar">
-                    <input type="text" placeholder="Digite aqui para pesquisar..." class="search">
+                    <input type="text" placeholder="Digite aqui para pesquisar...">
                 </div>
             </li>
             <li>
@@ -50,47 +50,31 @@
        </div>
     
        <div class="read">
-        <div class="input-group">
             <p><strong>Nome: </strong></p>
-            <input type="text">
-        </div>
-        <div class="input-group">
-            <p><strong>Data de aquisição: </strong></p>
-            <input type="datetime-local">
-        </div>
-        <div class="input-group">
+            <p><strong>Data de aquisição: </strong></p><input type="datetime">
             <p><strong>Modelo: </strong></p>
-            <input type="text" name="" id="">
-        </div>
-        <div class="input-group">
             <p><strong>Número de série: </strong></p>
-            <input type="text">
-        </div>
-        <div class="input-group">
-            <p class="inside"><strong>Tipo de Máquina:</strong></p>
-            <select>
-                <option value="" disabled selected>Selecione um tipo</option>
-                <option value="maquina1">Tipo 1</option>
-                <option value="maquina2">Tipo 2</option>
-                <option value="maquina3">Tipo 3</option>
-                <option value="maquina4">Tipo 4</option>
-                <option value="maquina5">Tipo 5</option>
-            </select>
-        </div>
-        <div class="input-group">
-            <p><strong>Localização: </strong></p>
-            <input type="text" name="" id="">
-        </div>
-        <div class="input-group">
-            <p><strong>Envie uma foto: </strong></p>
-        </div>
-        <input type="file">
-    </div>
-    
+            <div class="inside">
+                <p><strong>Tipo de Máquina:</strong></p>
+            </div>
+            
+
+            <div class="inputs">
+
+            </div>
+
+       </div>
+
+       <div class="button">
+        <a href="read.html">
+            <p><strong>Ativo</strong></p>
+        </a>
+        
+       </div>
 
     </main>
 
-    <script src="read.js"></script>
+    <script src="user.js"></script>
 
 </body>
 </html>

@@ -8,28 +8,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="navcontainer">
+    <nav class="navcontainer">
         <ul class="icon">
-            <li><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></li>
-            <li><i class="fa-solid fa-filter" style="color: #ffffff;"></i></li>
-            <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>   
+            <li>
+                <a href="#search" onclick="toggleSearchBar(event)">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                </a>
+                <div id="searchBar">
+                    <input type="text" placeholder="Digite aqui para pesquisar...">
+                </div>
+            </li>
+            <li>
+                <a href="#filter" onclick="toggleFilterContent(event)">
+                    <i class="fa-solid fa-filter" style="color: #ffffff;"></i>
+                </a>
+                <div id="filterContent" class="filterContent">
+                    <input type="checkbox" name="" id="">Lalala teste
+                </div>
+            </li>
+
+            <li>
+                <a href="#profile" onclick="toggleUserContent(event)">
+                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                    <div id="userContent" class="userContent">
+                        <p><strong>Nome:</strong>José Alves da Silva</p>
+                        <p><strong>ID:</strong> 125894</p>
+                        <p><strong>Cargo:</strong> Técnico - Segurança do Trabalho</p>
+                    </div>
+                </a>
+            </li>   
+            
         </ul>
-    </div>
 
-    <div class="contentBox">
-        <p>Selecione uma opção:</p>
-    </div>
 
-    <div class="contentOp">
-        <li class="iconII"><i class="fa-solid fa-qrcode" style="color: #ffffff;"></i></li>
-        <p>Cadastre um novo QR Code</p>
-    </div>
+    </nav>
 
-    <div class="contentOp">
-        <a href="read.html"></a>
-            <li class="iconII"><i class="fa-solid fa-camera-retro" style="color: #ffffff;"></i></li>
-            <p>Leia um QR Code</p>
-   </div>
 
+    <main>
+
+        <div class="contentBox">
+            <p>Selecione uma opção:</p>
+        </div>
+    
+        <div class="contentOp">
+            <a href="">
+                <li class="iconII"><i class="fa-solid fa-qrcode" style="color: #ffffff;"></i></li>
+                <p>Cadastre um novo QR Code</p>
+            </a>
+        </div>
+    
+        <div class="contentOp">
+            <a href="read.html">
+                <li class="iconII"><i class="fa-solid fa-camera-retro" style="color: #ffffff;"></i></li>
+                <p>Leia um QR Code</p>
+            </a>
+       </div>
+    
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
