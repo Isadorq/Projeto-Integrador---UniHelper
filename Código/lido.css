@@ -69,19 +69,16 @@ body {
 }
 
 .containerRd {
-    border: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
     border-radius: 5px;
     background-color: white;
-    width: 335px;
-    height: 550px;
-    display: inline-table;
-    /* align-items: center; */
-    /* margin: 20px; */
-    margin-left: 506px;
-    margin-top: 83px;
-    /* justify-content: space-evenly; */
-    /* align-content: flex-start; */
-    /* align-items: baseline; */
+    width: 310px;
+    height: 410px;
+    padding: 10px;
+    margin-left: 520px;
+    margin-top: 55px;
 }
 
 .containerRd h4{
@@ -91,4 +88,10 @@ body {
 
 .containerRd p {
     display: auto;    
+}
+
+.inputB {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
 }

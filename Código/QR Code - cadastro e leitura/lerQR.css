@@ -29,31 +29,6 @@ body {
     cursor: pointer;
 }
 
-.container {
-    display: flex;               
-    flex-direction: column;      
-    justify-content: center;     
-    align-items: center;        
-    height: calc(100vh - 60px); 
-    margin-top: 20px;          
-}
-
-.contentBox {
-    border: 20px solid transparent; 
-    border-radius: 5px;
-    height: 50px;
-    width: 170px;
-    background-color: #217178;
-    color: white;
-    display: flex;                
-    justify-content: center;      
-    align-items: center;          
-    text-align: center;
-    margin-bottom: 20px; 
-    margin-top: 30px;         
-}
-
-
 .contentOp {
     border: 20px solid transparent;
     border-radius: 5px;
@@ -76,17 +51,47 @@ body {
     justify-content: space-between;
 }
 
-.contentOp:hover{
-    cursor: pointer;
-}
-
 .iconII {
     margin-left: 10px; 
 }
 
-.conentOp a {
-    text-decoration: none;
-    color: inherit;
+.read {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    width: 310px;
+    height: 410px;
+    padding: 10px;
+    margin-left: 520px;
+    margin-top: 55px;
+}
+
+.button {
+    border: 5px;
+    background-color: #217178;
+    color: white;
+    height: 36px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.inside {
+    border: 5px;
+    background-color: #217178;
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    color: white;
 }
 
 .userContent {
@@ -111,7 +116,7 @@ body {
     background-color: #9CC0C3;
 }
 
-input {
+.search {
     margin: 0px 50px 10px 0px;
 }
 
@@ -129,3 +134,33 @@ input {
     width: 140px;
     box-shadow: #217178;
 }
+
+input {
+    display: flex;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select {
+    flex: 1; 
+    padding: 5px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+}
+

@@ -3,61 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Leia um QR Code</title>
     <link rel="stylesheet" href="lido.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <nav class="navcontainer">
-        <ul class="icon">
-            <li>
-                <a href="#search" onclick="toggleSearchBar(event)">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-                </a>
-                <div id="searchBar">
-                    <input type="text" placeholder="Digite aqui para pesquisar...">
-                </div>
-            </li>
-            <li>
-                <a href="#filter" onclick="toggleFilterContent(event)">
-                    <i class="fa-solid fa-filter" style="color: #ffffff;"></i>
-                </a>
-                <div id="filterContent" class="filterContent">
-                    <input type="checkbox" name="" id="">Lalala teste
-                </div>
-            </li>
-
-            <li>
-                <a href="#profile" onclick="toggleUserContent(event)">
-                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
-                    <div id="userContent" class="userContent">
-                        <p><strong>Nome:</strong>José Alves da Silva</p>
-                        <p><strong>ID:</strong> 125894</p>
-                        <p><strong>Cargo:</strong> Técnico - Segurança do Trabalho</p>
+    <body>
+        <nav class="navcontainer">
+            <ul class="icon">
+                <li>
+                    <a href="#search" onclick="toggleSearchBar(event)">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </a>
+                    <div id="searchBar">
+                        <input type="text" placeholder="Digite aqui para pesquisar...">
                     </div>
-                </a>
-            </li>   
-            
-        </ul>
+                </li>
+                <li>
+                    <a href="#filter" onclick="toggleFilterContent(event)">
+                        <i class="fa-solid fa-filter" style="color: #ffffff;"></i>
+                    </a>
+                    <div id="filterContent" class="filterContent">
+                        <input type="checkbox" name="" id="">Lalala teste
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#profile" onclick="toggleUserContent(event)">
+                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                        <div id="userContent" class="userContent">
+                            <p><strong>Nome:</strong>José Alves da Silva</p>
+                            <p><strong>ID:</strong> 125894</p>
+                            <p><strong>Cargo:</strong> Técnico - Segurança do Trabalho</p>
+                        </div>
+                    </a>
+                </li>   
+                
+            </ul>
 
 
-    </nav>
+        </nav>
 
-    <div class="contentOp">
-        <a href="read.html"></a>
-            <li class="iconII"><i class="fa-solid fa-camera-retro" style="color: #ffffff;"></i></li>
-            <p>Leia um QR Code</p>
-   </div>
+        <main>
+            <div class="contentOp">
+                <a href="read.html"></a>
+                    <li class="iconII"><i class="fa-solid fa-camera-retro" style="color: #ffffff;"></i></li>
+                    <p>Leia um QR Code</p>
+        </div>
+        
+        <div class="containerRd">
+            <div class="inputB">
+                <p><strong>Nome do produto:</strong></p>
+                <p>Máquina Moldadora</p>
+            </div>
+            <div class="inputB">
+                <p><strong>Data de aquisição:</strong></p>
+                <p>03/10/2022</p>
+            </div>
+            <div class="inputB">
+                <p><strong>Modelo: </strong></p>
+                <p>DayaMac 90 Toneladas</p>
+            </div>
+        </div>
+        
+        </main>
+        
+        <footer>
 
-   <div class="containerRd">
-        <h4>Nome do produto:</h4>
-        <p>Máquina Moldadora</p>
-        <h4>Data de aquisição:</h4>
-        <p>03/10/2022</p>
-        <h4>Modelo:</h4>
-        <p>DayaMac 90 Toneladas</p>
-   </div>
+        </footer>
 
-   <script src="lido.js"></script>
-</body>
+        <script src="lido.js"></script>
+    </body>
 </html>

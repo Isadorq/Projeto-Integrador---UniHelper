@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro novo usuário</title>
+    <title>Cadastre o usuário</title>
     <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -16,7 +16,7 @@
                     <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                 </a>
                 <div id="searchBar">
-                    <input type="text" placeholder="Digite aqui para pesquisar...">
+                    <input type="text" placeholder="Digite aqui para pesquisar..." class="search">
                 </div>
             </li>
             <li>
@@ -45,32 +45,48 @@
     <main>
         
         <div class="contentOp">
-            <li class="iconII"><i class="fa-solid fa-camera-retro" style="color: #ffffff;"></i></li>
-            <p>Leia um QR Code</p>
+            <li class="iconII"><i class="fa-solid fa-user-plus" style="color: #ffffff;"></i></li>
+            <p>Cadastre um funcionário</p>
        </div>
     
        <div class="read">
-            <p><strong>Nome: </strong></p>
-            <p><strong>Data de aquisição: </strong></p><input type="datetime">
-            <p><strong>Modelo: </strong></p>
-            <p><strong>Número de série: </strong></p>
-            <div class="inside">
-                <p><strong>Tipo de Máquina:</strong></p>
-            </div>
-            
-
-            <div class="inputs">
-
-            </div>
-
-       </div>
-
-       <div class="button">
-        <a href="read.html">
-            <p><strong>Ativo</strong></p>
-        </a>
-        
-       </div>
+        <div class="input-group">
+            <p><strong>Nome do usuário: </strong></p>
+            <input type="text">
+        </div>
+        <div class="input-group">
+            <p><strong>Data de nascimento: </strong></p>
+            <input type="datetime-local">
+        </div>
+        <div class="input-group">
+            <p><strong>ID: </strong></p>
+            <input type="text" name="" id="">
+        </div>
+        <div class="input-group">
+            <p><strong>E-mail: </strong></p>
+            <input type="text">
+        </div>
+        <div class="input-group">
+            <p class="inside"><strong>Cargo:</strong></p>
+            <select>
+                <option value="" disabled selected>Selecione um cargo</option>
+                <option value="maquina1">Cargo 1</option>
+                <option value="maquina2">Cargo 2</option>
+                <option value="maquina3">Cargo 3</option>
+                <option value="maquina4">Cargo 4</option>
+                <option value="maquina5">Cargo 5</option>
+            </select>
+        </div>
+        <!-- <div class="input-group">
+            <p><strong>Localização: </strong></p>
+            <input type="text" name="" id="">
+        </div> -->
+        <div class="input-group">
+            <p><strong>Envie uma foto: </strong></p>
+        </div>
+        <input type="file">
+    </div>
+    
 
     </main>
 
