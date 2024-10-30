@@ -32,19 +32,3 @@ window.onclick = function(event) {
         userContent.style.display = "none";
     }
 }
-
-// Acesso a câmera
-const video = document.getElementById('video');
-const startCameraButton = document.getElementById('startCamera');
-
-startCameraButton.addEventListener('click', async () => {
-    try {
-        // Solicita acesso à câmera
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-        // Define o stream de vídeo para o elemento <video>
-        video.srcObject = stream;
-    } catch (error) {
-        console.error('Erro ao acessar a câmera:', error);
-        alert('Não foi possível acessar a câmera. Verifique as permissões.');
-    }
-});
