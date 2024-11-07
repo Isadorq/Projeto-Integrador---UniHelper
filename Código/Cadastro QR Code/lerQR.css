@@ -37,18 +37,28 @@ body {
     list-style-type: none;
     height: 40px;
     width: 240px;
-    display: center;
+    display: flex;
+    justify-content: center;  
     align-items: center; 
-    justify-content: center;
-    padding: 0; 
-    margin-left: 535px;
+    padding: 0;
+    margin-left: auto;  
+    margin-right: auto; 
     margin-top: 55px;
 }
 
-.contentOp li {
-    display: flex; 
+.contentOp a {
+    display: flex;
     align-items: center; 
-    justify-content: space-between;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.contentOp i {
+    margin-right: 8px; 
+}
+
+.contentOp p {
+    margin: 0; 
 }
 
 .iconII {
@@ -61,11 +71,16 @@ body {
     margin: 5px;
     border-radius: 5px;
     background-color: white;
-    width: 310px;
-    height: 410px;
+    width: 450px;
+    height: 450px;
     padding: 10px;
     margin-left: 520px;
     margin-top: 55px;
+    justify-content: center;
+    margin-left: auto;  
+    margin-right: auto; 
+    margin-top: 55px;  
+    justify-content: center; 
 }
 
 .button {

@@ -55,19 +55,6 @@ body {
     margin-left: 10px; 
 }
 
-.read {
-    margin: 5px;
-    border-radius: 5px;
-    background-color: white;
-    width: 310px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-left: 520px;
-    margin-top: 55px;
-}
-
 .read img {
     height: 200px;  
     width: 200px;
