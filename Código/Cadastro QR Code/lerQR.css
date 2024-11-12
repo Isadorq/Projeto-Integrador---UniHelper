@@ -179,3 +179,13 @@ select {
     border: 1px solid #ccc;
 }
 
+@media screen and (max-width:400px){
+    .read{
+        width: 340px;
+    }
+    .contentOp{
+        height: 20px;
+        width: 240px;
+        border-radius: 10px;
+    }
+}
