@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9CC0C3;
+}
+.containerTitle{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: #217178;
+}
+.containerTitle>h4{
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containerSubLog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.containerSubLog>img{
+    width: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.containerInputLogin{
+    width: 320px;       
+    display: flex;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.containerButton{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.containerInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #9CC0C3;
+}
+input{
+    width: 220px;
+    height: 30px;
+    border: none;       
+    border-radius: 8px;
+    background-color: #9CC0C3;
+}
+input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+button{
+    width: 130px;
+    height: 30px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #9CC0C3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+#login{
+    width: 160px;
+}
