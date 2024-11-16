@@ -59,7 +59,7 @@ input{
     width: 220px;
     height: 30px;
     border: none;       
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: #9CC0C3;
 }
 input::placeholder{
