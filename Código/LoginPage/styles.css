@@ -1,13 +1,44 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerPage {
   display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.right {
+  flex: 1;
+  background-color: #9CC0C3;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right img {
+  max-width: 80%;
+  height: auto;
+}
+
+.left {
+  flex: 1;
+  background-color: #217178;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #9cc0c3;
 }
+
 .containerTitle {
   width: 200px;
   height: 40px;
@@ -17,33 +48,24 @@ body {
   border-radius: 7px;
   background-color: #217178;
 }
+
 .containerTitle > h4 {
   font-size: 20px;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
 }
-.containerSubLog {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.containerSubLog > img {
-  width: 120px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
+
 .containerInputLogin {
-  width: 320px;
-  height: 270px;
+  width: 346px;
+  height: 350px;
   display: flex;
-  margin-top: 50px;
+  margin-top: 20px;
   border-radius: 20px;
   background-color: white;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
+
 .containerInput {
   width: 220px;
   height: 40px;
@@ -52,43 +74,52 @@ body {
   margin-top: 20px;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  background-color: #9cc0c3;
+  background-color: #9CC0C3;
 }
-.containerInput > img {
-  margin: 0px 10px 0px 10px;
+
+.containerInput img {
+  margin: 0 10px;
 }
+
 .containerButton {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
+
 input {
-  width: 220px;
+  width: 180px;
   height: 30px;
   border: none;
   border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #9cc0c3;
+  background-color: #9CC0C3;
+  padding-left: 10px;
 }
+
 input::placeholder {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
   color: black;
+  font-weight: bold;
 }
+
 input:focus {
   outline: none;
 }
+
 button {
   width: 130px;
   height: 30px;
   border: none;
   margin-top: 20px;
   border-radius: 10px;
-  background-color: #9cc0c3;
+  background-color: #9CC0C3;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
+
 #login {
-  width: 160px;
+  width: 115px;
+}
+
+#signup {
+  width: 120px;
 }
